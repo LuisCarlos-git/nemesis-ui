@@ -1,0 +1,21 @@
+{
+  "name": "@nemesis-ui/tokens",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "build": "tsup src/index.ts --format esm,cjs --dts",
+    "dev": "tsup src/index.ts --format esm,cjs --dts --watch"
+  },
+  "keywords": [],
+  "author": "Luis Carlos Bastos",
+  "license": "ISC",
+  "devDependencies": {
+    "@nemesis-ui/ts-config": "workspace:*",
+    "@nemesis-ui/eslint-config": "workspace:*",
+    "tsup": "^8.0.2",
+    "typescript": "^5.4.5"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "name": "@nemesis-ui/react",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsup src/index.ts --format esm,cjs --dts",
+    "dev": "tsup src/index.ts --format esm,cjs --dts --watch"
+  },
+  "keywords": [],
+  "author": "Luis Carlos Bastos",
+  "license": "ISC",
+  "devDependencies": {
+    "@nemesis-ui/ts-config": "workspace:*",
+    "tsup": "^8.0.2",
+    "typescript": "^5.4.5"
+  },
+  "dependencies": {
+    "@nemesis-ui/eslint-config": "workspace:^",
+    "@nemesis-ui/tokens": "workspace:*"
+  }
+}

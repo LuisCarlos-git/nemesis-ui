@@ -1,0 +1,8 @@
+{
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "author": "Luis Carlos Bastos",
+  "license": "ISC"
+}
