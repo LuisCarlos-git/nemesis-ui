@@ -12,6 +12,7 @@ export default [
   eslintPluginPrettierRecommended,
   {
     rules: {
+      'react/react-in-jsx-scope': 'off',
       'prettier/prettier': [
         'error',
         {
