@@ -1,17 +1,17 @@
 export const colors = {
-  pink: {
+  'nemesis-pink': {
     400: '#E85B81',
     600: '#C12F5D',
   },
-  purple: {
+  'nemesis-purple': {
     400: '#7048E8',
     600: '#5028C6',
   },
-  blue: {
+  'nemesis-blue': {
     400: '#8CE0F3',
   },
 
-  gray: {
+  'nemesis-gray': {
     200: '#F8F9FA',
     300: '#DDE2E5',
     400: '#ACB5BD',

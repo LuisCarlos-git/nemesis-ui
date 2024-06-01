@@ -1,5 +1,13 @@
+import { ComponentProps } from 'react';
+
 import * as styles from './styles';
 
-export function Button() {
-  return <button className={styles.buttonCss()}>hello world</button>;
+type ButtonProps = ComponentProps<'button'> & styles.ButtonVariants;
+
+export function Button({ variant, children, ...rest }: ButtonProps) {
+  return (
+    <button {...rest} className={styles.buttonCss({ variant })}>
+      {children}
+    </button>
+  );
 }
