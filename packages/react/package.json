@@ -2,12 +2,13 @@
   "name": "@nemesis-ui/react",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
   "scripts": {
     "build": "tsup src/index.tsx --format esm,cjs --dts --external react",
     "dev": "tsup src/index.tsx --format esm,cjs --dts --watch --external react"
   },
-  "keywords": [],
   "author": "Luis Carlos Bastos",
   "license": "ISC",
   "devDependencies": {
@@ -24,7 +25,8 @@
     "typescript": "^5.4.5"
   },
   "dependencies": {
-    "@nemesis-ui/eslint-config": "workspace:^",
-    "@nemesis-ui/tokens": "workspace:*"
+    "@nemesis-ui/eslint-config": "workspace:*",
+    "@nemesis-ui/tokens": "workspace:*",
+    "tailwind-variants": "^0.2.1"
   }
 }
