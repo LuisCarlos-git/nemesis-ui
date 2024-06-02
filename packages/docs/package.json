@@ -33,6 +33,6 @@
     "storybook": "^8.1.5",
     "typescript": "^5.2.2",
     "vite": "^5.2.0",
-    "@nemesis-ui/react": "workspace:*"
+    "@nemesis-ui/ts-config": "workspace:*"
   }
 }
