@@ -27,6 +27,7 @@
   "dependencies": {
     "@nemesis-ui/eslint-config": "workspace:*",
     "@nemesis-ui/tokens": "workspace:*",
+    "@radix-ui/react-tooltip": "^1.0.7",
     "tailwind-variants": "^0.2.1"
   }
 }
