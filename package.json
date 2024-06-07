@@ -1,8 +1,16 @@
 {
+  "name": "ds-root",
   "private": true,
   "workspaces": [
     "packages/*"
   ],
+  "scripts": {
+    "dev": "turbo run dev --parallel"
+  },
+  "packageManager": "pnpm@9.1.1",
   "author": "Luis Carlos Bastos",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "turbo": "^2.0.3"
+  }
 }
