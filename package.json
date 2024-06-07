@@ -5,7 +5,8 @@
     "packages/*"
   ],
   "scripts": {
-    "dev": "turbo run dev --parallel"
+    "dev": "turbo run dev --parallel",
+    "build": "turbo run build"
   },
   "packageManager": "pnpm@9.1.1",
   "author": "Luis Carlos Bastos",
