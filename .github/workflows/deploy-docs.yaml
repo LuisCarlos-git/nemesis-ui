@@ -12,18 +12,24 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      -name: Install pnpm
+       uses: pnpm/action-setup@v4
+       with:
+        version: 9
+
       - name: Node setup
         uses: actions/setup-node@v4
         with: 
           node-version: 20
       
-      - run: npm ci
+      - name: Install dependencies
+        - runs: pnpm install
 
-      - run: nump run build
+      - run: pnpm build
 
       - name: Deploy Storybook
         working-directory: ./packages/docs
-        run: npm run deploy-storybook -- --ci --existing-output-dir=storybook-static
+        run: pnpm deploy-storybook -- --ci --existing-output-dir=storybook-static
         env:  
           GH_TOKEN: ${{ github.actor }}:${{ secrets.GITHUB_TOKEN }}
 
